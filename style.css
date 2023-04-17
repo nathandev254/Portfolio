@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@
 }
 body{
     background-color: transparent;
+    font-family: 'Poppins', sans-serif;
 }
 h1{
     font-size: 1.7rem;
@@ -57,7 +60,8 @@ header .nav-list ul li a:hover{
 }
 
 .btn{
-    background: var(--prmary-color);
+    background: transparent;
+    border: 2px solid var(--prmary-color);
     font-size: 1rem;
     margin-right: 1rem;
     padding: 1rem 1.5rem;
@@ -65,7 +69,10 @@ header .nav-list ul li a:hover{
     color: black;
     font-weight: 300;
     outline: none;
-    border: none;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background: var(--prmary-color);
 }
 
 /* ABOUT ME SECTION */
@@ -127,6 +134,7 @@ header .nav-list ul li a:hover{
 /* Projects */
 .projects{
     background-color: var(--prmary-color);
+    opacity: ;
     padding: 2rem 3rem;
 }
 .projects h2{
